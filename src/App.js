@@ -1,11 +1,8 @@
 import "./App.css";
+import Layout from "./components/Weather/Layout/Layout";
 
 function App() {
-  return (
-    <div>
-      <h1>It Works</h1>
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;
