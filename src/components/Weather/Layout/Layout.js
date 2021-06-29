@@ -1,5 +1,5 @@
 import React from "react";
-import { Weather } from "../Weather";
+import { Weather } from "../Weather/Weather";
 import { Container, WeatherContainer } from "./LayoutElements";
 
 const Layout = () => {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import styles from "./Weather.module.css";
 
 export const Weather = () => {
   const [lat, setLat] = useState(null);
@@ -38,11 +39,15 @@ export const Weather = () => {
   return (
     <div>
       {typeof data.main != "undefined" ? (
-        <div>
-          <h1>{data.name}</h1>
-          <span>{data.sys.country}</span>
-          <h2>{data.weather[0].description}</h2>
-          <p>{Math.round(data.main.temp)}ºC</p>
+        <div className={styles.container}>
+          <div className={styles.leftC}>
+            <h1 className={styles.name}>
+              {data.name}
+              <span className={styles.span}> {data.sys.country}</span>
+            </h1>
+          </div>
+          <p className={styles.temp}>{Math.round(data.main.temp)}ºC</p>
+          <h2 className={styles.description}>{data.weather[0].description}</h2>
           <img
             src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
             alt="imgicon"
