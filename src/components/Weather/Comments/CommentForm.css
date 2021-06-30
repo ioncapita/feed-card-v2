@@ -75,6 +75,7 @@
   width: 500px;
   background: transparent;
   color: #e2e2e2;
+  margin-bottom: 20px;
 }
 
 .comment-input::placeholder {

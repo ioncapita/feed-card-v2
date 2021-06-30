@@ -3,7 +3,16 @@ import CommentForm from "./CommentForm";
 import Comment from "./Comment";
 
 function CommentList() {
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState([
+    {
+      id: 1,
+      text: "What a wonderful day",
+    },
+    {
+      id: 2,
+      text: "I hope to get this job",
+    },
+  ]);
 
   const addComment = (comment) => {
     if (!comment.text || /^\s*$/.test(comment.text)) {
@@ -14,6 +23,7 @@ function CommentList() {
 
     setComments(newComments);
     console.log(...comments);
+    console.log(comments);
   };
 
   const updateComment = (commentId, newValue) => {
