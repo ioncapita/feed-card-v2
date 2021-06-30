@@ -29,8 +29,8 @@ export const Weather = () => {
           )
           .then((response) => {
             setData(response.data);
-            console.log(data);
           });
+        console.log(data);
       }
     };
     fetchData();
@@ -47,7 +47,13 @@ export const Weather = () => {
             </h1>
           </div>
           <p className={styles.temp}>{Math.round(data.main.temp)}ºC</p>
-          <h2 className={styles.description}>{data.weather[0].description}</h2>
+          {data.weather.map((item, index) => {
+            return (
+              <h2 className={styles.description} key={index}>
+                {item.description}
+              </h2>
+            );
+          })}
           <img
             src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
             alt="imgicon"
