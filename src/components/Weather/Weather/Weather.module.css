@@ -7,24 +7,26 @@
 
 .name {
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: 300;
   padding: 5px;
+  color: #aaaaaa;
 }
 
 .span {
   font-size: 0.6rem;
   font-weight: 600;
+  color: #aaaaaa;
 }
 
 .temp {
   font-weight: 600;
+  color: #aaaaaa;
 }
 
 .description {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  color: #aaaaaa;
 }

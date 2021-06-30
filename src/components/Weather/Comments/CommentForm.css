@@ -1,0 +1,133 @@
+.comment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px auto;
+  max-width: 680px;
+  height: 100px;
+  color: rgb(56, 56, 56);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 16px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.userImg {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px;
+}
+
+.comment-text {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.user-name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -9;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+.delete-icon:hover {
+  color: #332747;
+}
+
+.edit-icon:hover {
+  color: #332747;
+}
+
+.comment-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 5px;
+  border: 2px solid #e2e2e2;
+  outline: none;
+  width: 500px;
+  background: transparent;
+  color: #e2e2e2;
+}
+
+.comment-input::placeholder {
+  color: #e2e2e2;
+}
+
+.comment-button {
+  padding: 16px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  color: rgb(56, 56, 56);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 16px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.comment-button:hover {
+  background: #332747;
+  color: #e2e2e2;
+}
+
+.comment-input.edit {
+  border: 2px solid #e2e2e2;
+}
+
+.comment-button.edit {
+  color: rgb(56, 56, 56);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 16px 22px;
+}
+
+.comment-button.edit:hover {
+  background: #332747;
+  color: #e2e2e2;
+}
+
+.comment-form {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.time {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  z-index: -9;
+}

@@ -1,0 +1,10 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.feedImage {
+  margin: 10px;
+  max-width: 665px;
+  border-radius: 5px;
+}
